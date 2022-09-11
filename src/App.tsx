@@ -5,6 +5,7 @@ import { BrowserRouter, Navigate, Route } from 'react-router-dom'
 import './App.css'
 import { AuthGuard, RoleGuard } from './guards'
 import { PrivateRoutes, PublicRoutes, Roles } from './models'
+import store from './redux/store'
 import { RoutesWithNotFound } from './utilities'
 
 const Login = lazy(() => import('./pages/Login/Login'))
