@@ -1,9 +1,9 @@
-export const PublicRoutes = {
-  LOGIN: 'login',
+export enum PublicRoutes {
+  LOGIN = 'login',
 }
 
-export const PrivateRoutes = {
-  PRIVATE: 'private',
-  DASHBOARD: 'dashboard',
-  HOME: 'home',
+export enum PrivateRoutes {
+  PRIVATE = 'private',
+  DASHBOARD = 'dashboard',
+  HOME = 'home',
 }

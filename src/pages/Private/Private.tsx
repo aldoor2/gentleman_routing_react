@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import { Navigate, Route } from 'react-router-dom'
+
 import { PrivateRoutes } from '../../models'
 import { RoutesWithNotFound } from '../../utilities'
 

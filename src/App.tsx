@@ -7,10 +7,10 @@ import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { RoutesWithNotFound } from './utilities'
 import store from './redux/store'
 import './App.css'
-import { Dashboard } from './pages/Private'
 
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
+const Dashboard = lazy(() => import('./pages/Private/Dashboard/Dashboard'))
 
 function App() {
   return (

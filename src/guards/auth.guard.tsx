@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux'
 import { Navigate, Outlet } from 'react-router-dom'
+
 import { PrivateRoutes, PublicRoutes } from '../models'
 import { AppStore } from '../redux/store'
-
 interface Props {
   isPrivated: boolean
 }
