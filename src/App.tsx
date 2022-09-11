@@ -1,12 +1,11 @@
-import { BrowserRouter, Navigate, Route } from 'react-router-dom'
-import { Suspense, lazy } from 'react'
+import { lazy, Suspense } from 'react'
 import { Provider } from 'react-redux'
+import { BrowserRouter, Navigate, Route } from 'react-router-dom'
 
+import './App.css'
 import { AuthGuard, RoleGuard } from './guards'
 import { PrivateRoutes, PublicRoutes, Roles } from './models'
 import { RoutesWithNotFound } from './utilities'
-import store from './redux/store'
-import './App.css'
 
 const Login = lazy(() => import('./pages/Login/Login'))
 const Private = lazy(() => import('./pages/Private/Private'))
